@@ -1,0 +1,115 @@
+/*
+	body bg linear :  rgba(10, 10, 35, 0.8), rgba(27, 27, 50, 0.5);
+	container right color : #0a0a23;
+	input placeholder color :  #d0d0d5;
+	link p bg : #3b3b4f
+*/
+
+/*-------- reset css --------*/
+*, ::before, ::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: Verdana, sans-serif;
+	background: linear-gradient(rgba(10, 10, 35, 0.5), rgba(27, 27, 50, 0.5)), url(./images/bg-img.jpg) no-repeat;
+	background-size: cover;
+}
+section{
+	height: 80vh;
+}
+/*---------------- container ------------*/
+.container{
+	display: flex;
+	max-width: 1200px;
+	width: 100%;
+	margin: 5rem auto;
+	width: 100%;
+	height: inherit;
+}
+.container__image{
+	width: 80%;
+	height: inherit;
+	background: url(./images/beer.jpg) no-repeat;
+	background-size: cover;
+}
+
+/*---------------- container form ------------*/
+.container__form{
+	padding: 2rem 2.5rem;
+	background-color: #0a0a23;
+	color: white;
+}
+.container__form h1{
+	font-size: 1.3rem;
+}
+input, select{
+	width: 100%;
+	padding: 1rem 0 0.3rem;
+	border: none;
+	border-bottom: 2px solid #d0d0d5;
+	background-color: inherit;
+	outline: none;
+	color: white;
+}
+input::placeholder, select{
+	color: #d0d0d5;
+}
+select > option{
+	color: #0a0a23;
+}
+select, button[type="submit"], .links p{
+	cursor: pointer;
+}
+
+/*-------------- links -------------*/
+.links{
+	display: flex;
+	margin-top: 0.5rem;
+}
+.links p{
+	margin-right: 0.5rem;
+	padding: 0.7rem 1rem 0.7rem 0.2rem;
+	border-radius: 50px;
+	transition: background-color 1s;
+}
+.links a{
+	text-decoration: none;
+	background-color: white;
+	color: #0a0a23;
+	padding: 0.4rem 0.6rem;
+	font-weight: bold;
+	border-radius: 50%;
+	font-size: 0.8rem;
+}
+.links .last__link{
+	padding: 0.4rem;
+}
+span{
+	display: none;
+	margin-left: 0.5rem;
+}
+.links p:hover{
+	background-color: #3b3b4f;
+}
+.links p:hover span{
+	display: initial;
+}
+.container__form h2{
+	font-size: 0.9rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+}
+button[type="submit"]{
+	margin-top: 0.8rem;
+	padding: 0.7rem 2rem;
+	font-weight: bold;
+	background-color: #d0d0d5;
+	color: #0a0a23;
+	border: none;
+}
+button[type="submit"] + p{
+	font-size: 0.8rem;
+	margin-top: 0.5rem;
+}
